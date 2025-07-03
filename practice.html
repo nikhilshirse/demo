@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <center>
+      <h3>user login</h3> 
+      <p></p><input type="text" name="" id="uname" > <img src="" alt="" height="12px"  id="msg_pwd"></p>
+      <p></p><input type="text" name="" id="pwd" > <img src="" alt="" height="12px" id="msg_pwd"></p>
+      <p><button id="login"> login </button></p>
+    </center>
+
+    <script>
+
+        document.getElementById("uname").addEventListener("change",function(){
+           var uname = this.value;
+           if(uname!=""){
+            document.getElementById("msg_pwd").src="Right.jpg";
+           } 
+           else{
+             document.getElementById("msg_pwd").src="wrong.jpg";   
+           }
+        })
+
+        document.getElementById("pwd").addEventListener("change",function(){
+           var pwd = this.value;
+           if(pwd!=""){
+            document.getElementById("msg_pwd").src="Right.jpg";
+           } 
+           else{
+             document.getElementById("msg_pwd").src="wrong.jpg";   
+           }
+        })
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
